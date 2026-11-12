@@ -692,16 +692,15 @@ elif page == "AI Prediction & Reports":
         "and Risk Reports"
     )
 
-    # FRONTEND INTEGRATION - UNCHANGED
-    st.components.v1.iframe(
-        os.getenv("FRONTEND_URL", "http://localhost:5173"),
+    # FRONTEND INTEGRATION
+    st.iframe(
+        "https://stock-price-trend-predictor.vercel.app",
         height=1000,
         scrolling=True
     )
 
 
 elif page == "About Project":
-
     st.subheader("About StockPulse")
 
     st.markdown("""
