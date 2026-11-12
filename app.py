@@ -694,10 +694,10 @@ elif page == "AI Prediction & Reports":
 
     # FRONTEND INTEGRATION
     st.iframe(
-        "https://stock-price-trend-predictor.vercel.app",
-        height=1000,
-        scrolling=True
-    )
+    "https://stock-price-trend-predictor.vercel.app",
+    height=1000
+)
+    
 
 
 elif page == "About Project":
